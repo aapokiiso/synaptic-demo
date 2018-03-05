@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neural Networks in JS</title>
+    <style type="text/css">
+        body {
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        .loading {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            background: #2C3640;
+            color: #fff;
+        }
+
+        .loading__message {
+            width: 100%;
+            text-align: center;
+        }
+
+        .loading.is-finished {
+            display: none;
+        }
+
+        .testing {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .testing__actions {
+            margin: 0 auto;
+        }
+
+        .testing__action {
+            font-size: 50px;
+            display: block;
+            margin: 1em auto;
+        }
+
+        .testing__subject {
+            width: 200px;
+            height: 200px;
+            margin: 5%;
+        }
+
+        .testing__result {
+            font-size: 200px;
+            margin: 5%;
+        }
+    </style>
+</head>
+<body>
+<main class="content">
+    <div class="loading js-loading">
+        <p class="loading__message">Bleep bloop</p>
+        <p class="loading__message">Learning numbers...</p>
+        <p class="loading__message"><span class="js-loading-index">0</span> / <span class="js-loading-count">0</span></p>
+    </div>
+    <div class="testing">
+        <canvas class="testing__subject js-test-subject" id="test-digit-canvas" width="28" height="28"></canvas>
+        <div class="testing__actions">
+            <button class="testing__action js-test-shuffle">Shuffle image</button>
+            <button class="testing__action js-test-guess">Guess number</button>
+        </div>
+        <p class="testing__result js-test-result">?</p>
+    </div>
+</main>
+<script type="text/javascript" src="./index-compiled.js"></script>
+</body>
+</html>
