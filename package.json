@@ -1,0 +1,26 @@
+{
+  "name": "nn-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify test.js -o test-compiled.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/aapokiiso/nn-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/aapokiiso/nn-testing#readme",
+  "dependencies": {
+    "@lamiaoy/babel-config": "^1.1.0",
+    "@lamiaoy/class-list": "^2.1.1",
+    "@lamiaoy/dom-events": "^2.0.2",
+    "babel-core": "^6.26.0",
+    "babelify": "^8.0.0",
+    "browserify": "^16.1.0",
+    "mnist": "^1.1.0",
+    "synaptic": "^1.1.4"
+  }
+}
